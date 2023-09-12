@@ -6,6 +6,7 @@
     --fonte-padrao: "Open Sans", sans-serif;
     --fonte-cinza: #202020;
     --fonte-lilas: #854fee;
+    --background-gradient: linear-gradient(to right, #4458dc, #854fee);
 }
 
 h2 {
@@ -63,6 +64,20 @@ h2 {
     line-height: 4rem;
     color: #fff;
     text-shadow: .2rem .2rem 2px var(--fonte-cinza);
+    margin-bottom: 2rem;
+}
+
+.banner a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.1rem 2rem;
+    background: var(--background-gradient);
+    font-family: var(--fonte-padrao);
+    font-weight: 900;
+    letter-spacing: 2px;
+    box-shadow: .2rem .2rem 2px var(--fonte-cinza);
+    border-radius: 4px;
+    color: #fff;
     margin-bottom: 2rem;
 }
 
