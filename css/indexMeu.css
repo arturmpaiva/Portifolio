@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
+
+/*         PADRÕES DO PROJETO        */
 :root {
     --fonte-principal: "Baloo Da 2", sans-serif;
     --fonte-padrao: "Open Sans", sans-serif;
     --fonte-cinza: #202020;
     --fonte-lilas: #854fee;
+    --background-gelo: #f8f9fc;
     --background-gradient: linear-gradient(to right, #4458dc, #854fee);
-}
-
-html{
-    scroll-behavior: smooth;
 }
 
 h2 {
@@ -18,6 +17,47 @@ h2 {
     color: var(--fonte-cinza);
     font-size: 2.5rem;
 }
+
+hr {
+    width: 120px;
+    height: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--fonte-lilas);
+    margin: auto;
+}
+
+/*         PRELOADER        */
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--background-gradient);
+    display: flex;
+    z-index: 99999;
+}
+
+.spinner {
+    width: 85px;
+    height: 85px;
+    display: block;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    border-color: #fff transparent #fff transparent;
+    animation: loader 1.5s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}   
 
 /*         MENU HAMBURGUER        */
 .hamburguer {
@@ -66,6 +106,8 @@ h2 {
     height: 6px;
 }
 
+/*         CABEÇALHO        */
+
 .home {
     width: 100%;
     height: 100%;
@@ -81,6 +123,8 @@ h2 {
     opacity: .3;
     animation: zoom 2s forwards;
 }
+
+/*         BANNER CABEÇALHO        */
 
 .banner {
     position: absolute;
@@ -102,6 +146,8 @@ h2 {
     color: #fff;
     text-shadow: .2rem .2rem 2px var(--fonte-cinza);
     margin-bottom: 2rem;
+    animation: mooveUp 2s .2s forwards;
+    opacity: 0;
 }
 
 .banner span {
@@ -133,6 +179,12 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.botao-banner:hover {
+    color: var(--fonte-cinza);
+}
+
+/*         ANIMAÇÕES CABEÇALHO        */
+
 @keyframes zoom {
     0% {
         transform: scale(1.5);
@@ -142,6 +194,19 @@ h2 {
         transform: scale(1);
     }
 }
+
+@keyframes mooveUp {
+    0% {
+        transform: translateY(20rem);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+/*         MENU NAV        */
 
 .menu {
     position: fixed;
