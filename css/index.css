@@ -9,10 +9,61 @@
     --background-gradient: linear-gradient(to right, #4458dc, #854fee);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h2 {
     font-family: var(--fonte-principal);
     color: var(--fonte-cinza);
     font-size: 2.5rem;
+}
+
+/*         MENU HAMBURGUER        */
+.hamburguer {
+    position: fixed;
+    top: 6%;
+    right: 3%;
+    width: 35px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s;
+}
+
+.hamburguer .item {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: .2rem .2rem 2px var(--fonte-cinza);
+}
+
+.mostrar .hamburguer {
+    right: 20%;
+}
+
+.mostrar #item1 {
+    transform: translateY(5px) rotateZ(45deg);
+    box-shadow: none;
+    background-color: var(--fonte-lilas);
+    transition: all 1s;
+    height: 6px;
+}
+
+.mostrar #item2 {
+    display: none;
+}
+
+.mostrar #item3 {
+    transform: translateY(-11px) rotateZ(-45deg);
+    box-shadow: none;
+    background-color: var(--fonte-lilas);
+    transition: all 1s;
+    height: 6px;
 }
 
 .home {
@@ -90,52 +141,6 @@ h2 {
     100% {
         transform: scale(1);
     }
-}
-
-.hamburguer {
-    position: fixed;
-    top: 6%;
-    right: 3%;
-    width: 35px;
-    height: 22px;
-    cursor: pointer;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all .5s;
-}
-
-.hamburguer .item {
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: .2rem .2rem 2px var(--fonte-cinza);
-}
-
-.mostrar .hamburguer {
-    right: 20%;
-}
-
-.mostrar #item1 {
-    transform: translateY(5px) rotateZ(45deg);
-    box-shadow: none;
-    background-color: var(--fonte-lilas);
-    transition: all 1s;
-    height: 6px;
-}
-
-.mostrar #item2 {
-    display: none;
-}
-
-.mostrar #item3 {
-    transform: translateY(-11px) rotateZ(-45deg);
-    box-shadow: none;
-    background-color: var(--fonte-lilas);
-    transition: all 1s;
-    height: 6px;
 }
 
 .menu {
