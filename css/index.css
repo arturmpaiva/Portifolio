@@ -296,36 +296,38 @@ hr {
 }
 
 #html-css {
-    grid-column: ;
-    grid-row: ;
+    grid-column: 3/7;
+    grid-row: 1/2;
 }
 
 #javascript {
-    grid-column: ;
-    grid-row: ;
+    grid-column: 11/15;
+    grid-row: 1/2;
 }
 
 #bootstrap {
-    grid-column: ;
-    grid-row: ;
+    grid-column: 2/6;
+    grid-row: 3/4;
 }
 
 #wordpress {
-    grid-column: ;
-    grid-row: ;
+    grid-column: 12/16;
+    grid-row: 3/4;
 }
 
 #php {
-    grid-column: ;
-    grid-row: ;
+    grid-column: 3/7;
+    grid-row: 5/-1;
 }
 
 #git {
-    grid-column: ;
-    grid-row: ;
+    grid-column: 11/15;
+    grid-row: 5/-1;
 }
 
 #imagem-svg {
-    grid-column: ;
-    grid-row: ;
+    grid-column: 7/11;
+    grid-row: 3/4;
 }
+
+/*      PROJETOS        */
