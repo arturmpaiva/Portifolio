@@ -12,6 +12,10 @@
     --background-gradient: linear-gradient(to right, #4458dc, #854fee);
 }
 
+a {
+    text-decoration: none;
+}
+
 h2 {
     font-family: var(--fonte-principal);
     color: var(--fonte-cinza);
@@ -331,3 +335,142 @@ hr {
 }
 
 /*      PROJETOS        */
+
+.projetos {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.projetos-content .projeto {
+    width: 30%;
+    height: 250px;
+    margin: 1%;
+    position: relative;
+}
+
+.projeto figure {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.projeto figure img {
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    transition: all .3s;
+}
+
+.detalhes {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    text-align: center;
+    padding: 20px;
+    transition: all .3s;
+}
+
+.detalhes-content {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255,255,255, .2);
+    padding: 10px;
+}
+
+.detalhes h4 {
+    font-family: var(--fonte-principal);
+    color: rgba(255,255,255, .9);
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    text-shadow: .2rem .2rem 2px #000;
+    margin-bottom: 1.2rem;
+}
+
+.detalhes p {
+    font-family: var(--fonte-padrao);
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    line-height: 23px;
+    color: rgba(255,255,255, .9);
+    text-shadow: .2rem .2rem 2px #000;
+}
+
+.detalhes .article-button {
+    padding: .5rem 1.5rem;
+    font-family: var(--fonte-padrao);
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .9);
+    font-size: .8rem;
+    color: #fff;
+    transition: all .3s;
+}
+
+.article-button:hover {
+    background-image: var(--background-gradient);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, .1);
+}
+
+.projeto:hover .detalhes {
+    opacity: 1;
+    animation: detalhesUp .7s forwards;
+}
+
+/*         ANIMAÇÃO PROJETOS HOVER       */
+@keyframes detalhesUp {
+    0%{
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(1);
+        opacity: 1;
+    }
+}
+
+.projeto:hover figure img {
+    opacity: .1;
+}
+
+.projetos-link {
+    padding: .8rem 2rem;
+    background: var(--background-gradient);
+    color: #fff;
+    font-family: var(--fonte-padrao);
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    transition: all .3s;
+    font-size: .9rem;
+}
+
+.projetos-link:hover {
+    color: var(--fonte-cinza);
+    transform: translateY(-5px);
+}
+
+/*         FORMULÁRIO        */
+
