@@ -495,3 +495,25 @@ hr {
 }
 
 /*         FORMULÁRIO - ORÇAMENTO       */
+.orcamento {
+    margin-top: 35px;
+    width: 40%;
+    font-family: var(--fonte-padrao);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.orcamento h2 {
+    position: absolute;
+    top: -7%;
+    padding: 0 2rem;
+    background-image: var(--background-gradient);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.orcamento input [type="checkbox"]:checked {
+    background-color: red;
+    display: inline-block;
+}
