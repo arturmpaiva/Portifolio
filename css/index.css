@@ -517,3 +517,62 @@ hr {
     background-color: red;
     display: inline-block;
 }
+
+.orcamento h4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: var(--font-padrao);
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+    color: var(--font-cinza);
+}
+
+.orcamento label {
+    cursor: pointer;
+    margin-right: .5rem;
+    font-weight: 300;
+}
+
+.orcamento input{
+    margin-right: 1.2rem;
+}
+
+/*      NUMERO DE PAGINAS       */
+
+.paginas {
+    margin: 70px 0;
+    font-family: var(--font-padrao);
+}
+
+.paginas input::placeholder {
+    font-weight: 300;
+}
+
+.paginas input {
+    height: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--fonte-lilas);
+    padding: 0 .5rem 0 .5rem;
+}
+
+/*      VALOR TOTAL        */
+
+.valor-total {
+    display: flex;
+    align-items: center;
+}
+
+.valor-total p {
+    color: var(--fonte-lilas);
+    margin-right: 20px;
+}
+
+.valor-total span {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/*      FORMULARIO CONTATO        */
+
