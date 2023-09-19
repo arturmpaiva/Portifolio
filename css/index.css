@@ -576,3 +576,65 @@ hr {
 
 /*      FORMULARIO CONTATO        */
 
+.contato {
+    width: 60%;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-form {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.informacoes input{
+    width: 48%;
+}
+
+.informacoes input:first-child {
+    margin-right: 2%;
+}
+
+.contato-form input::placeholder, 
+textarea::placeholder {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    opacity: .5;
+    font-weight: 300;
+    font-family: var(--font-principal);
+}
+
+.contato-form input,
+textarea {
+    border: transparent;
+    background: none;
+    border-bottom: 2px dashed #202020;
+    margin-bottom: 30px;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-family: var(--font-padrao);
+    font-weight: 300;
+    color: #3e1492;
+    letter-spacing: 3px;
+}
+
+.btn-contato {
+    margin-top: 35px;
+    padding: .8rem;
+    background-image: var(--background-gradient);
+    border: none;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: all .3s;
+}
