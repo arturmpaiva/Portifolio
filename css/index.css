@@ -521,7 +521,7 @@ hr {
 .orcamento h4 {
     font-size: 1.5rem;
     font-weight: 900;
-    font-family: var(--font-padrao);
+    font-family: var(--fonte-padrao);
     letter-spacing: -2px;
     margin-bottom: 2rem;
     color: var(--font-cinza);
@@ -541,7 +541,7 @@ hr {
 
 .paginas {
     margin: 70px 0;
-    font-family: var(--font-padrao);
+    font-family: var(--fonte-padrao);
 }
 
 .paginas input::placeholder {
@@ -607,7 +607,7 @@ textarea::placeholder {
     letter-spacing: 4px;
     opacity: .5;
     font-weight: 300;
-    font-family: var(--font-principal);
+    font-family: var(--fonte-principal);
 }
 
 .contato-form input,
@@ -618,7 +618,7 @@ textarea {
     margin-bottom: 30px;
     padding: 1rem 0;
     font-size: 1rem;
-    font-family: var(--font-padrao);
+    font-family: var(--fonte-padrao);
     font-weight: 300;
     color: #3e1492;
     letter-spacing: 3px;
@@ -626,15 +626,23 @@ textarea {
 
 .btn-contato {
     margin-top: 35px;
-    padding: .8rem;
+    padding: .7rem;
     background-image: var(--background-gradient);
     border: none;
     color: #fff;
     font-weight: 900;
-    font-size: 1.1rem;
+    font-family: var(--fonte-padrao);
+    font-size: 1.4rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     border-radius: 70px;
     cursor: pointer;
     transition: all .3s;
 }
+
+.btn-contato:hover {
+    transform: translateY(-10px);
+    color: var(--font-cinza);
+}
+
+/*      RODAPE        */
