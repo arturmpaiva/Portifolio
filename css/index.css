@@ -646,3 +646,84 @@ textarea {
 }
 
 /*      RODAPE        */
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+}
+
+footer p {
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--font-cinza);
+    letter-spacing: 2px;
+}
+
+footer p a {
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-size: 1.1rem;
+    color: var(--fonte-lilas);
+    opacity: .9;
+    padding: 0 1rem;
+}
+
+footer p a:hover {
+    opacity: 1;
+}
+
+.redes-sociais {
+    list-style: none;
+    display: flex;
+}
+
+.redes-sociais li {
+    margin-right: 20px;
+    background-image: var(--background-gradient);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.redes-sociais li a {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.redes-sociais li:last-child {
+    margin-right: 0;
+}
+
+.redes-sociais li:hover {
+    transform: translateY(-5px);
+}
+
+/*      BOTAO TOPO        */
+
+.btn-topo {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background-image: var(--background-gradient);
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    opacity: .8;
+    box-shadow: .1rem .1rem 3px #000;
+}
+
+.btn-topo:hover {
+    opacity: 1;
+}
