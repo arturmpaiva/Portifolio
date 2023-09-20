@@ -1,4 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 1025px) {
+    /*      CABECALHO     */
     .banner {
         top: 35%;
         left: 5%;
@@ -7,5 +8,33 @@
     .banner h1 {
         font-size: 2rem;
         line-height: 2rem;
+    }
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .botao-banner {
+        padding: .5rem;
+        font-size: .9rem;
+    }
+
+    /*      MENU        */
+
+    .menu {
+        width: 50%;
+    }
+
+    .menu li a {
+        font-size: 1.2rem;
+    }
+
+    .mostrar .hambuguer {
+        right: 38%;
+    }
+
+    /*      CONHECIMENTOS       */
+    .conhecimentos h2 {
+        font-size: 1.5rem;
     }
 }
